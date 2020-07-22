@@ -1,0 +1,27 @@
+glassesTerminal = require("component").glasses; 
+glassesTerminal.removeAll(); 
+cube3D = glassesTerminal.addCube3D(); 
+cube3D.addTranslation(0, 10, 0); 
+cube3D.addColor(1, 0, 0, 0.8); 
+cube3D.addTranslation(0.5, 0.5, 0.5);
+cube3D.addTranslation(-0.5, -0.5, -0.5); 
+cube3D.addScale(30, 10, 10);
+
+cube3 = glassesTerminal.addCube3D(); 
+cube3.addTranslation(10, 20, 0); 
+cube3.addColor(1, 0, 0, 0.8); 
+cube3.addTranslation(0.5, 0.5, 0.5);
+cube3.addTranslation(-0.5, -0.5, -0.5); 
+cube3.addScale(10, 20, 10);
+
+
+while A < 10 do
+Positon = getUserPostion([String:Sim_out])
+glassesTerminal = require("component").glasses
+glassesTerminal.removeAll()
+
+Widget_TextLabel = glassesTerminal.addText2D()
+Widget_TextLabel.setText(Positon)
+Widget_TextLabel.addColor(1, 0, 0, 0.5)
+Widget_TextLabel.setCondition(Widget_TextLabel.addColor(0, 1, 0, 0.5), "OVERLAY_ACTIVE", true)
+end;
